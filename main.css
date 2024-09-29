@@ -1,0 +1,129 @@
+/* Basic reset */
+* {
+    margin: -2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid #ddd; /* Border around sections */
+    padding: 20px;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+div ul {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+section {
+    margin-bottom: 40px;
+    border: 2px solid #ddd; /* Border around sections */
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 10px;
+
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* To allow responsiveness */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1; /* This allows the columns to be flexible */
+    margin: 10px;
+    min-width: 200px; /* Minimum width for small screens */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        margin: 10px 0;
+    }
+}
+
+.hover-underline {
+    text-decoration: none; /* Remove underline by default */
+    color: #007BFF; /* Text color */
+    transition: text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.hover-underline:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+.p-next {
+    padding-top: 20px;
+}
+
+img {
+    width: 150px; /* Change the width to your desired size */
+    height: auto;  /* Maintain aspect ratio */
+    margin: 10px;  /* Optional: Adds space between images */
+}
+
